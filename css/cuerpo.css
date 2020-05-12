@@ -10,8 +10,7 @@
 
 body {
     text-decoration: none;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 main {
@@ -61,7 +60,6 @@ main {
     border-radius: 5px;
     text-decoration: none;
     color: white;
-
 }
 
 .boton-ordena a:hover {
