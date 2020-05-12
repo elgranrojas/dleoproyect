@@ -1,0 +1,277 @@
+@import url(header.css);
+@import url(letras.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+main {
+    width: 100%;
+}
+
+.contenedor1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; 
+}
+
+/*----------PRIMERA SECCION------------*/
+
+.titulo {
+    margin: 5px 0;
+}
+
+.imagen1 img{
+    width: 100%;
+}
+
+.contenedor1 .tituloh2 {
+    text-align: center;
+}
+
+.boton-ordena {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -45px;
+}
+
+.boton-ordena a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+    height: 40px;
+    width: 150px;
+    background: rgb(85,111,53);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.boton-ordena a:hover {
+    background: #fcaf45;
+}
+
+/*----------SECCION BIENVENIDA------------*/
+
+.segunda-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.segunda-seccion .imagen1 {
+    width: 90%;
+    margin: 5px 0;
+}
+
+.segunda-seccion .bienvenida {
+    width: 90%;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.segunda-seccion .bienvenida .tituloh3 {
+    margin: 10px 0;
+
+}
+
+.segunda-seccion .bienvenida .texto1 {
+    margin-bottom: 20px;
+}
+
+.segunda-seccion .bienvenida .texto2 {
+    margin-bottom: 20px;
+}
+
+.segunda-seccion .bienvenida .boton {
+    width: 100;
+    align-items: center;
+}
+
+.segunda-seccion .bienvenida .boton a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 40px;
+    width: 150px;
+    background: rgb(85,111,53);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.segunda-seccion .bienvenida .boton a:hover {
+    background: #fcaf45;
+}
+
+/*------------Seccion Especialidades-----*/
+
+.tercera-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tercera-seccion .contenedor-platillos {
+    margin: 0 10px;
+    width: 350px;
+    height: 520px;
+}
+
+.tercera-seccion .contenedor-platillos .imagen-blog {
+    width:100%;
+    border-radius: 4% 4% 0 0;
+}
+
+.tercera-seccion .contenedor-platillos .imagen-blog img {
+    width:100%;
+    display: blocK;
+}
+
+.contenedor-platillos .platillo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tercera-seccion .contenedor-platillos .platillo .boton {
+    width: 100%;
+    align-items: center;
+}
+
+.tercera-seccion .contenedor-platillos .platillo a{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 40px;
+    width: 150px;
+    background: rgb(85,111,53);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.tercera-seccion .contenedor-platillos .platillo a:hover {
+    background: #fcaf45;
+}
+
+.tercera-seccion .contenedor-platillos .tituloh3 {
+    margin: 10px 0;
+}
+
+.tercera-seccion .contenedor-platillos .texto1 {
+    color: rgb(110, 110, 110);
+    margin-bottom: 5px;
+    height: 85px;
+    overflow: hidden;
+}
+
+.tercera-seccion .contenedor-platillos .texto2 {
+    height: 20px;
+}
+
+/*----------UBICACION------------*/
+
+.ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.ubiacion .mapa, .ubicacion .info {
+    margin: 5px 20px;
+}
+
+.ubicacion .mapa iframe {
+    width: 100%;
+}
+
+.ubicacion .info {
+    background: url(../imagenes_logo/linen.png);
+    border-radius: 3%;
+    width: 100%;
+    padding: 15px 8px;
+}
+
+.ubicacion .info .horarios {
+    margin: 10px 0;
+}
+
+@media screen and (min-width:500px) {
+   .ubicacion .info {
+       width: 400px;
+   } 
+   .ubicacion .mapa {
+       width: 490px;
+   }
+}
+
+@media screen and (min-width:1100px){
+    .main {
+        width: 75%;
+    }
+    
+    .contenedor1 {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imagen1 img{
+        width: 100%;
+    }
+
+    .segunda-seccion .imagen1 {
+        width: 500px;
+        margin: 5px 20px;
+    }
+    
+    .segunda-seccion .bienvenida {
+        width: 500px;
+        margin: 5px 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .boton-ordena {
+        text-align: center;
+        position: relative;
+        top: -45px;
+    }
+    
+    .boton-ordena a {
+        height: 65px;
+        width: 200px;
+        font-size: 25px;
+    }
+}

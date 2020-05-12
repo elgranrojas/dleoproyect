@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 54.5px;
+    background: url(../imagenes_logo/linen.png);
+    box-shadow: 2px 2px 1px rgba(180, 180, 180, 0.5);
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.contenedor-header {
+    width: 100%;
+}
+
+.headera {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin: 1px 4px;
+    padding: 2px 0;
+}
+
+.logo img{
+    width: 35px;
+}
+
+.headera .sociales {
+    display: none;
+}
+
+.parallevar {
+    margin: auto 5px;
+}
+
+.parallevar2 {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.parallevar2 a {
+    text-decoration: none;
+    background: rgb(85,111,53);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 0;
+}
+
+.parallevar2 a:hover {
+    background: #fcaf45;
+}
+
+
+
+.headera .redes {
+    margin: auto 15px;
+    padding: 8px 10px;
+    background: rgb(85,111,53);
+    color: white;
+    border-radius: 3px;
+}
+
+.icon-food-1 {
+    margin-right: 4px;
+}
+
+
+/*------------MENU---------*/
+
+
+.icon-facebook, .icon-instagram, .icon-twitter, .icon-ubicacion {
+    color: rgb(85,111,53);
+}
+
+.lista-menu .yo {
+    color: rgb(85,111,53);
+}
+
+/*-----Menu---*/
+
+.lista-menu {
+    position:absolute;
+    background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255,0.5));
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(-1150px);
+    transition: all .5s ease;
+    font-size: 30px;
+    height: 380px;
+    z-index: 2000;
+}
+
+.lista-menu ul a{
+    display: block;
+    margin: 5px 3px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    transition: all .5s ease;
+
+}
+
+.icon-whatsapp {
+    color: rgb(85,111,53);
+}
+
+.lista-menu ul a:hover {
+    color: rgb(85,111,53);
+    padding-left: 25px;
+
+}
+
+.lista-menu .sociales {
+    margin: 5px 3px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sociales a {
+    text-decoration: none;
+}
+
+.sociales a:hover {
+    cursor: pointer;
+
+}
+
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+.icon-menu {
+    left: 45px;
+    top: 12px;
+    font-size: 25px;
+    color:rgb(85,111,53);
+    transition: all .5s ease;
+}
+
+#cancel {
+    left: 45px;
+    top: 12px;
+    font-size: 0px;
+    color:rgb(85,111,53);
+    pointer-events: none;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .lista-menu {
+    transform: translateX(0px);
+}
+
+#check:checked ~ label #btn {
+    opacity:0 ;
+    font-size: 0px;
+    pointer-events: none;
+}
+
+#check:checked ~label #cancel {
+    opacity: 100%;
+    font-size: 25px;
+    pointer-events: all;
+
+}
+
+.icon-facebook:hover {
+    color: #3b5998;
+}
+
+.icon-instagram:hover {
+    color: #fcaf45;
+}
+
+.icon-twitter:hover {
+    color: #1da1f2;
+}
+.icon-whatsapp:hover {
+    color: #075e54;
+}
+.icon-ubicacion:hover {
+    color: #8a7967;
+}
+
+
+
+/*-----------------------PANTALLA A 800PX---------------------*/
+
+@media screen and (min-width: 1100px) {
+
+    header {
+        height: 135px;
+        width: 100%;
+    }
+
+    .contenedor-header {
+        height: 1350px;
+    }
+
+    .headera {
+        width: 75%;
+        height: 135px;
+        margin: auto;
+    }
+
+    .logo {
+        margin: auto 5px;
+    }
+
+
+    .logo img {
+        width: 85px;
+    }
+
+    label #btn, label #cancel {
+        display: none;
+    }
+
+    .parallevar {
+        height: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .parallevar2 {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .parallevar2 a {
+        text-decoration: none;
+        background: rgb(85,111,53);
+        padding: 8px 15px;
+        border-radius: 5px;
+        color: white;
+    }
+
+
+
+    .sociales1 {
+        margin: 5px auto;
+
+    }
+
+
+    .sociales1 .sociales {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: rgb(85,111,53);
+
+    }
+
+    .sociales1 .sociales a {
+        font-size: 35px;
+    }
+
+
+
+
+    /*------- LISTA MENU---------*/
+
+
+    .lista-menu {
+        display: none;
+    }
+
+    .lista-menu2 {
+        margin: auto 0px;
+
+    }
+
+
+
+    .lista-menu2 ul a {
+        font-size: 20px;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1.5px solid transparent;
+        margin:auto 20px;
+        color: black;
+    
+    }
+
+    .lista-menu2 ul a:hover {
+        color: rgb(85,111,53);
+        border-bottom: 1.5px solid rgb(85,111,53);
+    }
+    .lista-menu2 .yo {
+        color:rgb(85,111,53);
+    }
+
+
+
+}
+
+@media screen and (max-width:1099px) {
+    .lista-menu2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    .lista-menu2 ul a {
+        margin: auto 8px;
+    }
+}
+

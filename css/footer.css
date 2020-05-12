@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    background: rgb(85,111,53);
+    margin-top: 25px;
+}
+
+.pie_pagina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+    color: white;
+}
+
+.pie_pagina .logo img {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.pie_pagina .redes a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.pie_pagina .info {
+    margin: 10px;
+    text-align: center;
+}
+
+.texto1 a {
+    color: white;
+
+}
+
+

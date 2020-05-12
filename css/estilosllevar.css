@@ -1,0 +1,102 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(cuerpo.css);
+
+.instrucciones {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    overflow-x: hidden;
+}
+
+.contenedor1 .icon-telefono,
+.contenedor1 .icon-whatsapp,
+.contenedor1 .icon-instagram {
+    font-size: 55px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color:rgb(85,111,53);
+}
+
+.imagen-instrucciones {
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid rgb(83, 83, 83);
+    z-index: 1000;
+    background: white;
+}
+
+.imagen-instrucciones:hover {
+    cursor: pointer;
+    border: 5px solid rgb(85,111,53);
+}
+
+.imagen-instrucciones:hover ~ .cuadro-texto {
+    box-shadow: 4px 4px 4px 4px rgb(196, 196, 196) ;
+}
+
+.imagen-instrucciones:hover ~ .cuadro-texto .titleh4 {
+    color:rgb(85,111,53);
+}
+
+.imagen-instrucciones img {
+    width: 100px;
+}
+
+.cuadro-texto {
+    padding-left: 40px;
+    width: 100%;
+    background: url(../imagenes_logo/dust_scratches.png);
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+    left: -25px;
+}
+
+.cuadro-texto .titleh4 {
+    margin-bottom: 10px;
+}
+
+.titleh4 {
+    font-size: 16px;
+    color: rgb(25,25,25);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text2 {
+    font-size: 14px;
+    color: rgb(25,25,25);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.text3 {
+    font-size: 12px;
+    color: rgb(25,25,25);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .titleh4 {
+        font-size: 24px;
+        color: rgb(25,25,25);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .text2 {
+        font-size: 18px;
+        color: rgb(25,25,25);
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    .text3 {
+        font-size: 14px;
+        color: rgb(25,25,25);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
